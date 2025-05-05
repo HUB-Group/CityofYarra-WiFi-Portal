@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>City of Yarra Public WiFi</title>
+</head>
+
+<body>
+  <section class="wrapper">
+    <div class="container-sm">
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="card text-center border-0 my-5">
+            <div class="card-header _logo_background">
+
+                <img class="img-fluid" style="width: 10rem;" src="assets/images/city_of_yarra-logo_white.png">
+              <h4 class="text-white titlefont">Welcome to the</h4>
+              <h1 class="text-white titlefont titlefont_larger">City of Yarra</h1>
+              <h2 class="text-white titlefont">Free Public WiFi</h2>
+            </div>
+            <div class="card-body">
+
+              <div class="btn _btn">
+                <a id="continuelink" href="#">Continue</a>
+              </div>
+              <div  class="fineprint text-center mx-5">
+              <p>By clicking Continue, you have agreed to the <a href="termsandconditions.html"
+                  class="link-primary">Access
+                  Terms and Conditions</a>.
+                The City of Yarra reserves the right to change these terms and conditions at any time and you
+                should review these terms each time you connect to the free WiFi service.</p></div>
+
+            </div>
+            <div class="card-body text-body-secondary border-0 mb-3">
+              If you are experiencing difficulty logging in, please contact XXXXX.
+            </div>
+            <div class="card-footer border-0 enehub">
+              <a href="https://www.ene-hub.com">This WiFi Network is provided by ENE.HUB</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <script type="text/javascript">
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    // Access the value of the 'user_continue_url' parameter
+    const userContinueUrl = urlParams.get('base_grant_url');
+    // Get and set the continuelink
+    var link = document.getElementById('continuelink');
+    link.href = userContinueUrl;
+  </script>
+</body>
+
+</html>
